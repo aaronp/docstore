@@ -26,10 +26,10 @@ jobs:
             cp -r $(npm root -g)/swagger-ui-dist/* dist/docs/
             cp dist/openapi.yaml dist/docs/openapi.yaml
             echo "Swagger stuff: $PWD"
-            find ./dist/docs -name 'swagger-initializer.js' -type f
+            find dist/docs -name 'swagger-initializer.js' -type f
 
             echo "replacing..."
-            find ./dist/docs -name 'swagger-initializer.js' -type f -exec sed -i '' -e 's|https://petstore.swagger.io/v2/swagger.json|./openapi.yaml|g' {} \;
+            find dist/docs -name 'swagger-initializer.js' -type f -print -exec sed -i 's|https://petstore.swagger.io/v2/swagger.json|./openapi.yaml|g' {} \;
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:

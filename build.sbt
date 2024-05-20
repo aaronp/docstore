@@ -24,9 +24,9 @@ lazy val commonSettings = Seq(
   // you'll need to uncomment this line once you're using data models generated from the service.yaml
   //
   //
-  // libraryDependencies += "kindservices" %%% "docstore" % "0.0.1",
   // ================================================================================================
-  libraryDependencies ++= Seq(
+  libraryDependencies += "kindservices" %%% "docstore" % "0.0.4",
+  libraryDependencies ++= Seq(  
     "org.scalatest" %%% "scalatest" % "3.2.18" % Test
   )
 )

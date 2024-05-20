@@ -15,7 +15,6 @@ import kind.logic.js.*
 import kind.logic.telemetry.*
 import scala.util.control.NonFatal
 
-
 case class MakePizzaRequest(quantity: Int, toppings: List[String]) derives ReadWriter {
   def toJson = writeJs(this)
 }
@@ -33,17 +32,20 @@ def initMermaid() = {
     try {
       val request = read[MakePizzaRequest](scenario.input)
 
-      val mermaidMarkdown = PizzaOps.asMermaid(request.quantity, request.toppings)
+      // val mermaidMarkdown = PizzaOps.asMermaid(request.quantity, request.toppings)
 
-      val cleaned = mermaidMarkdown
-        .replace("```mermaid", "")
-        .replace("```", "")
-        .trim
+      // val cleaned = mermaidMarkdown
+      //   .replace("```mermaid", "")
+      //   .replace("```", "")
+      //   .trim
 
-      AppSkeleton.mermaidPage.update(scenario, cleaned)
+      // AppSkeleton.mermaidPage.update(scenario, cleaned)
     } catch {
       case NonFatal(e) =>
-        AppSkeleton.mermaidPage.updateError(scenario, s"We couldn't parse the scenario as a DraftContract: $e")
+        AppSkeleton.mermaidPage.updateError(
+          scenario,
+          s"We couldn't parse the scenario as a DraftContract: $e"
+        )
     }
   }
 }

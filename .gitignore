@@ -1,0 +1,17 @@
+.bsp
+.idea
+out
+target
+.DS_Store
+project/target
+/ui
+node_modules
+
+.bloop
+.metals
+/project/project
+dist
+vite-app.zip
+Unstaged changes after reset:
+M	.gitignore
+.vscode

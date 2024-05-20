@@ -155,8 +155,7 @@ case class TestContainer(service: DefaultService, telemetry: Telemetry) {
       div(
         style := "margin:1em;padding:1em",
         "Diff/Copy With:",
-        otherPathInput,
-        button("Copy", onclick := { () => onCopy() })
+        otherPathInput
       ),
       button(style := ButtonStyle, "Save", onclick   := { () => onSave() }),
       button(style := ButtonStyle, "Update", onclick := { () => onPatch() }),

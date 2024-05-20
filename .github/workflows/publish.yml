@@ -22,12 +22,13 @@ jobs:
         run: |
             mkdir -p dist/docs
             npm install -g swagger-cli swagger-ui-dist
-            echo "which swagger-cli $(which swagger-cli)"
             swagger-cli bundle schemas/docstore/service.yaml -o dist/openapi.yaml
-            echo "Dir Contents:"
-            ls -Alrth 
             cp -r $(npm root -g)/swagger-ui-dist/* dist/docs/
             cp dist/openapi.yaml dist/docs/openapi.yaml
+            echo "Swagger stuff: $PWD"
+            find ./dist/docs -name 'swagger-initializer.js' -type f
+
+            echo "replacing..."
             find ./dist/docs -name 'swagger-initializer.js' -type f -exec sed -i '' -e 's|https://petstore.swagger.io/v2/swagger.json|./openapi.yaml|g' {} \;
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3

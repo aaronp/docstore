@@ -1,0 +1,8 @@
+artifactId: docstore
+artifactVersion: "0.0.1"
+groupId: kindservices
+packageName: docstore
+modelPackage: docstore.model
+apiPackage: docstore.api
+gitRepoId: kindservices
+gitUserId: aaronp

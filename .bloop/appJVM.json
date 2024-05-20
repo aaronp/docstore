@@ -1,0 +1,797 @@
+{
+    "version": "1.4.0",
+    "project": {
+        "name": "appJVM",
+        "directory": "/Users/aaron/dev/sandbox/docstore/jvm",
+        "workspaceDir": "/Users/aaron/dev/sandbox/docstore",
+        "sources": [
+            "/Users/aaron/dev/sandbox/docstore/jvm/src/main/scala",
+            "/Users/aaron/dev/sandbox/docstore/jvm/src/main/scala-3",
+            "/Users/aaron/dev/sandbox/docstore/jvm/src/main/java",
+            "/Users/aaron/dev/sandbox/docstore/shared/src/main/scala-3",
+            "/Users/aaron/dev/sandbox/docstore/shared/src/main/scala",
+            "/Users/aaron/dev/sandbox/docstore/jvm/target/scala-3.4.1/src_managed/main"
+        ],
+        "dependencies": [
+            
+        ],
+        "classpath": [
+            "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.4.1/scala3-library_3-3.4.1.jar",
+            "/Users/aaron/.ivy2/local/kindservices/docstore_3/0.0.4/jars/docstore_3.jar",
+            "/Users/aaron/Library/Caches/Coursier/v1/https/maven.pkg.github.com/kindservices/logic-first/com/github/aaronp/logic-first-jvm_3/0.1.12/logic-first-jvm_3-0.1.12.jar",
+            "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/cask_3/0.9.2/cask_3-0.9.2.jar",
+            "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.12/scala-library-2.13.12.jar",
+            "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/upickle_3/3.2.0/upickle_3-3.2.0.jar",
+            "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/dev/zio/zio_3/2.0.22/zio_3-2.0.22.jar",
+            "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/sourcecode_3/0.4.1/sourcecode_3-0.4.1.jar",
+            "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/aaronp/eie_3/2.0.1/eie_3-2.0.1.jar",
+            "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/undertow/undertow-core/2.3.10.Final/undertow-core-2.3.10.Final.jar",
+            "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/cask-util_3/0.9.2/cask-util_3-0.9.2.jar",
+            "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/ujson_3/3.2.0/ujson_3-3.2.0.jar",
+            "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/upack_3/3.2.0/upack_3-3.2.0.jar",
+            "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/upickle-implicits_3/3.2.0/upickle-implicits_3-3.2.0.jar",
+            "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/dev/zio/zio-internal-macros_3/2.0.22/zio-internal-macros_3-2.0.22.jar",
+            "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/dev/zio/zio-stacktracer_3/2.0.22/zio-stacktracer_3-2.0.22.jar",
+            "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/dev/zio/izumi-reflect_3/2.3.8/izumi-reflect_3-2.3.8.jar",
+            "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jboss/logging/jboss-logging/3.4.3.Final/jboss-logging-3.4.3.Final.jar",
+            "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jboss/xnio/xnio-api/3.8.8.Final/xnio-api-3.8.8.Final.jar",
+            "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jboss/xnio/xnio-nio/3.8.8.Final/xnio-nio-3.8.8.Final.jar",
+            "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jboss/threads/jboss-threads/3.5.0.Final/jboss-threads-3.5.0.Final.jar",
+            "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/pprint_3/0.8.1/pprint_3-0.8.1.jar",
+            "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/geny_3/1.0.0/geny_3-1.0.0.jar",
+            "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/castor_3/0.3.0/castor_3-0.3.0.jar",
+            "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/java-websocket/Java-WebSocket/1.5.3/Java-WebSocket-1.5.3.jar",
+            "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/upickle-core_3/3.2.0/upickle-core_3-3.2.0.jar",
+            "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/dev/zio/izumi-reflect-thirdparty-boopickle-shaded_3/2.3.8/izumi-reflect-thirdparty-boopickle-shaded_3-2.3.8.jar",
+            "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/wildfly/common/wildfly-common/1.5.4.Final/wildfly-common-1.5.4.Final.jar",
+            "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/wildfly/client/wildfly-client-config/1.0.1.Final/wildfly-client-config-1.0.1.Final.jar",
+            "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/fansi_3/0.4.0/fansi_3-0.4.0.jar",
+            "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar"
+        ],
+        "out": "/Users/aaron/dev/sandbox/docstore/.bloop/appJVM",
+        "classesDir": "/Users/aaron/dev/sandbox/docstore/.bloop/appJVM/scala-3/classes",
+        "resources": [
+            "/Users/aaron/dev/sandbox/docstore/jvm/src/main/resources",
+            "/Users/aaron/dev/sandbox/docstore/shared/src/main/resources",
+            "/Users/aaron/dev/sandbox/docstore/jvm/target/scala-3.4.1/resource_managed/main"
+        ],
+        "scala": {
+            "organization": "org.scala-lang",
+            "name": "scala-compiler",
+            "version": "3.4.1",
+            "options": [
+                "-deprecation",
+                "-feature",
+                "-unchecked",
+                "-rewrite",
+                "-Xlint"
+            ],
+            "jars": [
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.4.1/scala3-library_3-3.4.1.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.12/scala-library-2.13.12.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-compiler_3/3.4.1/scala3-compiler_3-3.4.1.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-interfaces/3.4.1/scala3-interfaces-3.4.1.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/tasty-core_3/3.4.1/tasty-core_3-3.4.1.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-asm/9.6.0-scala-1/scala-asm-9.6.0-scala-1.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/compiler-interface/1.9.6/compiler-interface-1.9.6.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-reader/3.19.0/jline-reader-3.19.0.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-terminal/3.19.0/jline-terminal-3.19.0.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-terminal-jna/3.19.0/jline-terminal-jna-3.19.0.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/util-interface/1.9.8/util-interface-1.9.8.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.3.1/jna-5.3.1.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scaladoc_3/3.4.1/scaladoc_3-3.4.1.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-tasty-inspector_3/3.4.1/scala3-tasty-inspector_3-3.4.1.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark/0.62.2/flexmark-0.62.2.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-ast/0.62.2/flexmark-util-ast-0.62.2.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-data/0.62.2/flexmark-util-data-0.62.2.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-html/0.62.2/flexmark-util-html-0.62.2.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-anchorlink/0.62.2/flexmark-ext-anchorlink-0.62.2.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-autolink/0.62.2/flexmark-ext-autolink-0.62.2.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-emoji/0.62.2/flexmark-ext-emoji-0.62.2.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-gfm-strikethrough/0.62.2/flexmark-ext-gfm-strikethrough-0.62.2.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-gfm-tasklist/0.62.2/flexmark-ext-gfm-tasklist-0.62.2.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-wikilink/0.62.2/flexmark-ext-wikilink-0.62.2.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-tables/0.62.2/flexmark-ext-tables-0.62.2.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-yaml-front-matter/0.62.2/flexmark-ext-yaml-front-matter-0.62.2.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/nl/big-o/liqp/0.8.2/liqp-0.8.2.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jsoup/jsoup/1.17.2/jsoup-1.17.2.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.15.1/jackson-dataformat-yaml-2.15.1.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-builder/0.62.2/flexmark-util-builder-0.62.2.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-collection/0.62.2/flexmark-util-collection-0.62.2.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-dependency/0.62.2/flexmark-util-dependency-0.62.2.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-format/0.62.2/flexmark-util-format-0.62.2.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-misc/0.62.2/flexmark-util-misc-0.62.2.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-sequence/0.62.2/flexmark-util-sequence-0.62.2.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-visitor/0.62.2/flexmark-util-visitor-0.62.2.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jetbrains/annotations/15.0/annotations-15.0.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util/0.62.2/flexmark-util-0.62.2.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/nibor/autolink/autolink/0.6.0/autolink-0.6.0.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-jira-converter/0.62.2/flexmark-jira-converter-0.62.2.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/antlr/antlr4-runtime/4.7.2/antlr4-runtime-4.7.2.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.15.1/jackson-annotations-2.15.1.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.15.1/jackson-core-2.15.1.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.15.1/jackson-databind-2.15.1.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.12.1/jackson-datatype-jsr310-2.12.1.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/ua/co/k/strftime4j/1.0.5/strftime4j-1.0.5.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/yaml/snakeyaml/2.0/snakeyaml-2.0.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-util-options/0.62.2/flexmark-util-options-0.62.2.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-ins/0.62.2/flexmark-ext-ins-0.62.2.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/vladsch/flexmark/flexmark-ext-superscript/0.62.2/flexmark-ext-superscript-0.62.2.jar"
+            ],
+            "setup": {
+                "order": "mixed",
+                "addLibraryToBootClasspath": false,
+                "addCompilerToClasspath": false,
+                "addExtraJarsToClasspath": false,
+                "manageBootClasspath": false,
+                "filterLibraryFromClasspath": false
+            }
+        },
+        "java": {
+            "options": [
+                
+            ]
+        },
+        "test": {
+            "frameworks": [
+                {
+                    "names": [
+                        "org.scalacheck.ScalaCheckFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.specs2.runner.Specs2Framework",
+                        "org.specs2.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.specs.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.scalatest.tools.Framework",
+                        "org.scalatest.tools.ScalaTestFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "com.novocode.junit.JUnitFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "munit.Framework"
+                    ]
+                },
+                {
+                    "names": [
+                        "zio.test.sbt.ZTestFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "weaver.framework.CatsEffect"
+                    ]
+                },
+                {
+                    "names": [
+                        "hedgehog.sbt.Framework"
+                    ]
+                }
+            ],
+            "options": {
+                "excludes": [
+                    
+                ],
+                "arguments": [
+                    
+                ]
+            }
+        },
+        "platform": {
+            "name": "jvm",
+            "config": {
+                "home": "/Users/aaron/.sdkman/candidates/java/18.0.2-oracle",
+                "options": [
+                    "-Duser.dir=/Users/aaron/dev/sandbox/docstore"
+                ]
+            },
+            "mainClass": [
+                
+            ],
+            "runtimeConfig": {
+                "home": "/Users/aaron/.sdkman/candidates/java/18.0.2-oracle",
+                "options": [
+                    "-Duser.dir=/Users/aaron/dev/sandbox/docstore"
+                ]
+            },
+            "classpath": [
+                "/Users/aaron/dev/sandbox/docstore/.bloop/appJVM/scala-3/classes",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.4.1/scala3-library_3-3.4.1.jar",
+                "/Users/aaron/.ivy2/local/kindservices/docstore_3/0.0.4/jars/docstore_3.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/maven.pkg.github.com/kindservices/logic-first/com/github/aaronp/logic-first-jvm_3/0.1.12/logic-first-jvm_3-0.1.12.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/cask_3/0.9.2/cask_3-0.9.2.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.12/scala-library-2.13.12.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/upickle_3/3.2.0/upickle_3-3.2.0.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/dev/zio/zio_3/2.0.22/zio_3-2.0.22.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/sourcecode_3/0.4.1/sourcecode_3-0.4.1.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/aaronp/eie_3/2.0.1/eie_3-2.0.1.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/undertow/undertow-core/2.3.10.Final/undertow-core-2.3.10.Final.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/cask-util_3/0.9.2/cask-util_3-0.9.2.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/ujson_3/3.2.0/ujson_3-3.2.0.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/upack_3/3.2.0/upack_3-3.2.0.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/upickle-implicits_3/3.2.0/upickle-implicits_3-3.2.0.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/dev/zio/zio-internal-macros_3/2.0.22/zio-internal-macros_3-2.0.22.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/dev/zio/zio-stacktracer_3/2.0.22/zio-stacktracer_3-2.0.22.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/dev/zio/izumi-reflect_3/2.3.8/izumi-reflect_3-2.3.8.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jboss/logging/jboss-logging/3.4.3.Final/jboss-logging-3.4.3.Final.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jboss/xnio/xnio-api/3.8.8.Final/xnio-api-3.8.8.Final.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jboss/xnio/xnio-nio/3.8.8.Final/xnio-nio-3.8.8.Final.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jboss/threads/jboss-threads/3.5.0.Final/jboss-threads-3.5.0.Final.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/pprint_3/0.8.1/pprint_3-0.8.1.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/geny_3/1.0.0/geny_3-1.0.0.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/castor_3/0.3.0/castor_3-0.3.0.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/java-websocket/Java-WebSocket/1.5.3/Java-WebSocket-1.5.3.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/upickle-core_3/3.2.0/upickle-core_3-3.2.0.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/dev/zio/izumi-reflect-thirdparty-boopickle-shaded_3/2.3.8/izumi-reflect-thirdparty-boopickle-shaded_3-2.3.8.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/wildfly/common/wildfly-common/1.5.4.Final/wildfly-common-1.5.4.Final.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/wildfly/client/wildfly-client-config/1.0.1.Final/wildfly-client-config-1.0.1.Final.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/fansi_3/0.4.0/fansi_3-0.4.0.jar",
+                "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar"
+            ]
+        },
+        "resolution": {
+            "modules": [
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala3-library_3",
+                    "version": "3.4.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala3-library_3",
+                            "path": "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.4.1/scala3-library_3-3.4.1.jar"
+                        },
+                        {
+                            "name": "scala3-library_3",
+                            "classifier": "sources",
+                            "path": "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.4.1/scala3-library_3-3.4.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "kindservices",
+                    "name": "docstore_3",
+                    "version": "0.0.4",
+                    "configurations": "compile",
+                    "artifacts": [
+                        {
+                            "name": "docstore_3",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "a96508c12b44f9c373dcce9961da5d3391232134"
+                            },
+                            "path": "/Users/aaron/.ivy2/local/kindservices/docstore_3/0.0.4/jars/docstore_3.jar"
+                        },
+                        {
+                            "name": "docstore_3",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "b9cceeba10f515664c70fe918f684ceb99699479"
+                            },
+                            "path": "/Users/aaron/.ivy2/local/kindservices/docstore_3/0.0.4/srcs/docstore_3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.github.aaronp",
+                    "name": "logic-first-jvm_3",
+                    "version": "0.1.12",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "logic-first-jvm_3",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "4e962d9ff417b860590988e07620b8263d3e8448"
+                            },
+                            "path": "/Users/aaron/Library/Caches/Coursier/v1/https/maven.pkg.github.com/kindservices/logic-first/com/github/aaronp/logic-first-jvm_3/0.1.12/logic-first-jvm_3-0.1.12.jar"
+                        },
+                        {
+                            "name": "logic-first-jvm_3",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "3c4895670d9bcfa5b435832e0e0062a9bb3636d1"
+                            },
+                            "path": "/Users/aaron/Library/Caches/Coursier/v1/https/maven.pkg.github.com/kindservices/logic-first/com/github/aaronp/logic-first-jvm_3/0.1.12/logic-first-jvm_3-0.1.12-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.lihaoyi",
+                    "name": "cask_3",
+                    "version": "0.9.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "cask_3",
+                            "path": "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/cask_3/0.9.2/cask_3-0.9.2.jar"
+                        },
+                        {
+                            "name": "cask_3",
+                            "classifier": "sources",
+                            "path": "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/cask_3/0.9.2/cask_3-0.9.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-library",
+                    "version": "2.13.12",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-library",
+                            "path": "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.12/scala-library-2.13.12.jar"
+                        },
+                        {
+                            "name": "scala-library",
+                            "classifier": "sources",
+                            "path": "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.12/scala-library-2.13.12-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.lihaoyi",
+                    "name": "upickle_3",
+                    "version": "3.2.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "upickle_3",
+                            "path": "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/upickle_3/3.2.0/upickle_3-3.2.0.jar"
+                        },
+                        {
+                            "name": "upickle_3",
+                            "classifier": "sources",
+                            "path": "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/upickle_3/3.2.0/upickle_3-3.2.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "dev.zio",
+                    "name": "zio_3",
+                    "version": "2.0.22",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "zio_3",
+                            "path": "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/dev/zio/zio_3/2.0.22/zio_3-2.0.22.jar"
+                        },
+                        {
+                            "name": "zio_3",
+                            "classifier": "sources",
+                            "path": "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/dev/zio/zio_3/2.0.22/zio_3-2.0.22-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.lihaoyi",
+                    "name": "sourcecode_3",
+                    "version": "0.4.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "sourcecode_3",
+                            "path": "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/sourcecode_3/0.4.1/sourcecode_3-0.4.1.jar"
+                        },
+                        {
+                            "name": "sourcecode_3",
+                            "classifier": "sources",
+                            "path": "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/sourcecode_3/0.4.1/sourcecode_3-0.4.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.github.aaronp",
+                    "name": "eie_3",
+                    "version": "2.0.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "eie_3",
+                            "path": "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/aaronp/eie_3/2.0.1/eie_3-2.0.1.jar"
+                        },
+                        {
+                            "name": "eie_3",
+                            "classifier": "sources",
+                            "path": "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/aaronp/eie_3/2.0.1/eie_3-2.0.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.undertow",
+                    "name": "undertow-core",
+                    "version": "2.3.10.Final",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "undertow-core",
+                            "path": "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/undertow/undertow-core/2.3.10.Final/undertow-core-2.3.10.Final.jar"
+                        },
+                        {
+                            "name": "undertow-core",
+                            "classifier": "sources",
+                            "path": "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/undertow/undertow-core/2.3.10.Final/undertow-core-2.3.10.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.lihaoyi",
+                    "name": "cask-util_3",
+                    "version": "0.9.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "cask-util_3",
+                            "path": "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/cask-util_3/0.9.2/cask-util_3-0.9.2.jar"
+                        },
+                        {
+                            "name": "cask-util_3",
+                            "classifier": "sources",
+                            "path": "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/cask-util_3/0.9.2/cask-util_3-0.9.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.lihaoyi",
+                    "name": "ujson_3",
+                    "version": "3.2.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "ujson_3",
+                            "path": "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/ujson_3/3.2.0/ujson_3-3.2.0.jar"
+                        },
+                        {
+                            "name": "ujson_3",
+                            "classifier": "sources",
+                            "path": "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/ujson_3/3.2.0/ujson_3-3.2.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.lihaoyi",
+                    "name": "upack_3",
+                    "version": "3.2.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "upack_3",
+                            "path": "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/upack_3/3.2.0/upack_3-3.2.0.jar"
+                        },
+                        {
+                            "name": "upack_3",
+                            "classifier": "sources",
+                            "path": "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/upack_3/3.2.0/upack_3-3.2.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.lihaoyi",
+                    "name": "upickle-implicits_3",
+                    "version": "3.2.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "upickle-implicits_3",
+                            "path": "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/upickle-implicits_3/3.2.0/upickle-implicits_3-3.2.0.jar"
+                        },
+                        {
+                            "name": "upickle-implicits_3",
+                            "classifier": "sources",
+                            "path": "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/upickle-implicits_3/3.2.0/upickle-implicits_3-3.2.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "dev.zio",
+                    "name": "zio-internal-macros_3",
+                    "version": "2.0.22",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "zio-internal-macros_3",
+                            "path": "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/dev/zio/zio-internal-macros_3/2.0.22/zio-internal-macros_3-2.0.22.jar"
+                        },
+                        {
+                            "name": "zio-internal-macros_3",
+                            "classifier": "sources",
+                            "path": "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/dev/zio/zio-internal-macros_3/2.0.22/zio-internal-macros_3-2.0.22-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "dev.zio",
+                    "name": "zio-stacktracer_3",
+                    "version": "2.0.22",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "zio-stacktracer_3",
+                            "path": "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/dev/zio/zio-stacktracer_3/2.0.22/zio-stacktracer_3-2.0.22.jar"
+                        },
+                        {
+                            "name": "zio-stacktracer_3",
+                            "classifier": "sources",
+                            "path": "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/dev/zio/zio-stacktracer_3/2.0.22/zio-stacktracer_3-2.0.22-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "dev.zio",
+                    "name": "izumi-reflect_3",
+                    "version": "2.3.8",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "izumi-reflect_3",
+                            "path": "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/dev/zio/izumi-reflect_3/2.3.8/izumi-reflect_3-2.3.8.jar"
+                        },
+                        {
+                            "name": "izumi-reflect_3",
+                            "classifier": "sources",
+                            "path": "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/dev/zio/izumi-reflect_3/2.3.8/izumi-reflect_3-2.3.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.jboss.logging",
+                    "name": "jboss-logging",
+                    "version": "3.4.3.Final",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jboss-logging",
+                            "path": "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jboss/logging/jboss-logging/3.4.3.Final/jboss-logging-3.4.3.Final.jar"
+                        },
+                        {
+                            "name": "jboss-logging",
+                            "classifier": "sources",
+                            "path": "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jboss/logging/jboss-logging/3.4.3.Final/jboss-logging-3.4.3.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.jboss.xnio",
+                    "name": "xnio-api",
+                    "version": "3.8.8.Final",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "xnio-api",
+                            "path": "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jboss/xnio/xnio-api/3.8.8.Final/xnio-api-3.8.8.Final.jar"
+                        },
+                        {
+                            "name": "xnio-api",
+                            "classifier": "sources",
+                            "path": "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jboss/xnio/xnio-api/3.8.8.Final/xnio-api-3.8.8.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.jboss.xnio",
+                    "name": "xnio-nio",
+                    "version": "3.8.8.Final",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "xnio-nio",
+                            "path": "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jboss/xnio/xnio-nio/3.8.8.Final/xnio-nio-3.8.8.Final.jar"
+                        },
+                        {
+                            "name": "xnio-nio",
+                            "classifier": "sources",
+                            "path": "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jboss/xnio/xnio-nio/3.8.8.Final/xnio-nio-3.8.8.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.jboss.threads",
+                    "name": "jboss-threads",
+                    "version": "3.5.0.Final",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jboss-threads",
+                            "path": "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jboss/threads/jboss-threads/3.5.0.Final/jboss-threads-3.5.0.Final.jar"
+                        },
+                        {
+                            "name": "jboss-threads",
+                            "classifier": "sources",
+                            "path": "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jboss/threads/jboss-threads/3.5.0.Final/jboss-threads-3.5.0.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.lihaoyi",
+                    "name": "pprint_3",
+                    "version": "0.8.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "pprint_3",
+                            "path": "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/pprint_3/0.8.1/pprint_3-0.8.1.jar"
+                        },
+                        {
+                            "name": "pprint_3",
+                            "classifier": "sources",
+                            "path": "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/pprint_3/0.8.1/pprint_3-0.8.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.lihaoyi",
+                    "name": "geny_3",
+                    "version": "1.0.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "geny_3",
+                            "path": "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/geny_3/1.0.0/geny_3-1.0.0.jar"
+                        },
+                        {
+                            "name": "geny_3",
+                            "classifier": "sources",
+                            "path": "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/geny_3/1.0.0/geny_3-1.0.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.lihaoyi",
+                    "name": "castor_3",
+                    "version": "0.3.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "castor_3",
+                            "path": "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/castor_3/0.3.0/castor_3-0.3.0.jar"
+                        },
+                        {
+                            "name": "castor_3",
+                            "classifier": "sources",
+                            "path": "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/castor_3/0.3.0/castor_3-0.3.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.java-websocket",
+                    "name": "Java-WebSocket",
+                    "version": "1.5.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "Java-WebSocket",
+                            "path": "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/java-websocket/Java-WebSocket/1.5.3/Java-WebSocket-1.5.3.jar"
+                        },
+                        {
+                            "name": "Java-WebSocket",
+                            "classifier": "sources",
+                            "path": "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/java-websocket/Java-WebSocket/1.5.3/Java-WebSocket-1.5.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.lihaoyi",
+                    "name": "upickle-core_3",
+                    "version": "3.2.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "upickle-core_3",
+                            "path": "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/upickle-core_3/3.2.0/upickle-core_3-3.2.0.jar"
+                        },
+                        {
+                            "name": "upickle-core_3",
+                            "classifier": "sources",
+                            "path": "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/upickle-core_3/3.2.0/upickle-core_3-3.2.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "dev.zio",
+                    "name": "izumi-reflect-thirdparty-boopickle-shaded_3",
+                    "version": "2.3.8",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "izumi-reflect-thirdparty-boopickle-shaded_3",
+                            "path": "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/dev/zio/izumi-reflect-thirdparty-boopickle-shaded_3/2.3.8/izumi-reflect-thirdparty-boopickle-shaded_3-2.3.8.jar"
+                        },
+                        {
+                            "name": "izumi-reflect-thirdparty-boopickle-shaded_3",
+                            "classifier": "sources",
+                            "path": "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/dev/zio/izumi-reflect-thirdparty-boopickle-shaded_3/2.3.8/izumi-reflect-thirdparty-boopickle-shaded_3-2.3.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.wildfly.common",
+                    "name": "wildfly-common",
+                    "version": "1.5.4.Final",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "wildfly-common",
+                            "path": "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/wildfly/common/wildfly-common/1.5.4.Final/wildfly-common-1.5.4.Final.jar"
+                        },
+                        {
+                            "name": "wildfly-common",
+                            "classifier": "sources",
+                            "path": "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/wildfly/common/wildfly-common/1.5.4.Final/wildfly-common-1.5.4.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.wildfly.client",
+                    "name": "wildfly-client-config",
+                    "version": "1.0.1.Final",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "wildfly-client-config",
+                            "path": "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/wildfly/client/wildfly-client-config/1.0.1.Final/wildfly-client-config-1.0.1.Final.jar"
+                        },
+                        {
+                            "name": "wildfly-client-config",
+                            "classifier": "sources",
+                            "path": "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/wildfly/client/wildfly-client-config/1.0.1.Final/wildfly-client-config-1.0.1.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.lihaoyi",
+                    "name": "fansi_3",
+                    "version": "0.4.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "fansi_3",
+                            "path": "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/fansi_3/0.4.0/fansi_3-0.4.0.jar"
+                        },
+                        {
+                            "name": "fansi_3",
+                            "classifier": "sources",
+                            "path": "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/fansi_3/0.4.0/fansi_3-0.4.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.slf4j",
+                    "name": "slf4j-api",
+                    "version": "1.7.25",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "slf4j-api",
+                            "path": "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar"
+                        },
+                        {
+                            "name": "slf4j-api",
+                            "classifier": "sources",
+                            "path": "/Users/aaron/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25-sources.jar"
+                        }
+                    ]
+                }
+            ]
+        },
+        "tags": [
+            "library"
+        ]
+    }
+}

@@ -18,10 +18,7 @@
   },
   "dependencies": {
     "archiver": "^7.0.1",
-    "golden-layout": "^2.6.0",
     "jquery": "^3.7.1",
-    "mermaid": "^10.9.0",
-    "swagger-cli": "^4.0.4",
-    "swagger-ui-dist": "^5.17.10"
+    "mermaid": "^10.9.0"
   }
 }

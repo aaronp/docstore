@@ -1,26 +1,27 @@
 package docstore
 
-import org.scalajs.dom
-import scalatags.JsDom.all.*
-import org.scalajs.dom.{HTMLElement, Node, document, html}
-import org.scalajs.dom.html.Div
-import scala.scalajs.js.Dynamic.global
-import scala.concurrent.Future
-import scala.concurrent.duration.given
-import scala.scalajs.js.JSON
-import scala.scalajs.js.annotation.JSExportTopLevel
-import upickle.default.*
-
-import kind.logic.js.*
 import kind.logic.telemetry.*
-import scala.util.control.NonFatal
-
-def content = div("Yo!").render
+import docstore.api.DefaultService
+import org.scalajs.dom.html.Div
+import kind.logic.js.*
 
 @main
 def mainJSApp(): Unit = {
-  println("Hello from Scala.js!")
+
+  // NOTE: in "real life", this service would probably use a fetch client:
+
+  // val url = s"/api/test?path=$path"
+  // val request = FetchRequest(url)
+  // Fetch.fetch(request).map { response =>
+  //   response.text().map { text =>
+  //     resultDiv.innerHTML = text
+  //   }
+  // }
+
+  val telemetry               = Telemetry()
+  val service: DefaultService = DocStoreApp()(using telemetry)
+
   val container: Div = HtmlUtils.$("main-container")
   container.innerHTML = ""
-  container.appendChild(content)
+  container.appendChild(TestContainer(service, telemetry).content)
 }

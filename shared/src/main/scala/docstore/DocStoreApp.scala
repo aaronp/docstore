@@ -10,8 +10,10 @@ object DocStoreApp {
 
   val Id = Actor.service[DocStoreApp]
 
-  def apply()(using telemetry: Telemetry): DocStoreApp = {
-    val logic: [A] => DocStoreLogic[A] => Result[A] = DocStoreDefaults.defaultProgram
+  def apply(
+      impl: DocStoreDefaults = DocStoreDefaults.apply()
+  )(using telemetry: Telemetry): DocStoreApp = {
+    val logic: [A] => DocStoreLogic[A] => Result[A] = impl.defaultProgram
     App(logic)
   }
 
@@ -51,10 +53,8 @@ object DocStoreApp {
       run(DocStoreLogic.get(path, version)).execOrThrow()
     }
 
-    def getMetadata(path: String) = {
-      ???
-      // run(DocStoreLogic.()).execOrThrow()
-    }
+    def getMetadata(path: String) = run(DocStoreLogic.metadata(path)).execOrThrow()
+
     def saveDocument(path: String, body: Json): docstore.model.SaveDocument200Response = {
       run(DocStoreLogic.save(path, body)).execOrThrow()
 

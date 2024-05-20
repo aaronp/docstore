@@ -39,6 +39,14 @@ case class PathTree(children: Map[String, PathTree] = Map.empty, data: Json = uj
     }
   }
 
+  def patchData(
+      path: Seq[String],
+      newData: Json,
+      createIfNotFound: Boolean = true
+  ) = {
+    update(path, (t => t.copy(data = t.data.mergeWith(newData))), createIfNotFound)
+  }
+
   def updateData(
       path: Seq[String],
       newData: Json,
